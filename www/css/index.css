@@ -1,0 +1,126 @@
+@media screen and (max-width: 767px) {
+    body{
+        background-color: #E3F2FD;
+        height: 100%;
+        width: 100%;
+        overflow-x: hidden;
+    }
+    
+    h2{
+        font-size: 40px!important;
+    }
+
+    .btn{
+        background-color: #2196F3;
+        font-size: 19px;
+        text-transform: none;
+        min-height: 70px;
+        width: 60%;
+        margin: 10px;
+    }
+    
+    .lists{
+        text-align: center!important;
+        background-color: #2196F3;
+        font-size: 20px;
+        text-transform: none;
+        min-height: 70px;
+        width: 100%;
+        margin-left: 0px;
+        border-bottom: 0px;
+    }
+    label{
+        margin-right: 50px;
+    }
+
+    #front-page{
+        margin-top: 50%;
+        margin-bottom: 50%;
+        text-align: center;
+    }
+
+    .badge{
+        margin-top: auto!important;
+        margin-bottom: auto!important;
+        color: black!important;
+        background-color: transparent;
+    }
+
+    .names{
+        margin-top: auto!important;
+        margin-bottom: auto!important;
+    }
+
+    .change{
+        background-color: tomato!important;
+        box-shadow: black;
+        border-radius: 4px;
+    }
+
+    #select-category{
+        text-align: center;
+    }
+    #item-list{
+        min-height: 85vh;
+        text-align: center;
+        overflow-y: scroll!important;
+    }
+    .navigation{
+        text-align : center;
+    }
+    .navi {
+        min-height: 40px!important;
+        width: 38%;
+        background-color: rgb(243, 93, 33);
+        font-size: 17px;
+        text-transform: none;
+        margin: 10px;
+    }
+    .trans{
+        opacity: 0.5;
+    }
+    #displayArea{
+        min-height: 85vh;
+        text-align: center;
+        overflow-y: scroll!important;
+    }
+    .smaller{
+        align-items: center;
+        margin: 0px!important;
+        min-height: 40px!important;
+    }
+
+#info1,
+#info2,
+#info3,
+#info4 {
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+}
+
+#info1.show,
+#info2.show,
+#info3.show,
+#info4.show {
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+} 
+}

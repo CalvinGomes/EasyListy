@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *"/>
+
+    <link href="fontawesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="css/materialize.css" />
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+    <title>Customisable Listing !!!</title>
+
+</head>
+
+<body>
+    <div class="app">
+    <section id="front-page">
+        <button class="create-button waves-effect waves-light btn" >Create a New List</button>
+        <button class="open-button waves-effect waves-light btn">Open an <br>Existing List</button>
+    </section>
+
+    <section id="create-list">
+        <div id="select-category" class="animated fadeInRight">
+            <h2>Select the Category...</h2>
+
+            <button name="bakery" value="1" class="category waves-effect waves-light btn">
+                <span class="a"></span>Bakery</button>
+            <button name="grocery" value="2" class="category waves-effect waves-light btn">
+                <span class="a"></span>Grocery</button>
+            <button name="cosmetics" value="3" class="category waves-effect waves-light btn">
+                <span class="a"></span>Cosmetics</button>
+            <button name="food" value="4" class="category waves-effect waves-light btn">
+                <span class="a"></span>Food</button>
+            <br>
+        </div>
+
+        <div id="select-items">
+            <div id="item-list" class="ab bakery animated fadeInRight">
+                <h2>Select the Items...</h2>
+                <ul class="collapsible popout" data-collapsible="accordion">
+                    <li>
+                        <div name="bread" class="btn lists collapsible-header waves-effect waves-light">
+                            <div class="names">Bread</div>
+                            <span id="bread" class="badge"></span>
+                        </div>
+                        <div class="collapsible-body">
+                            <form class="bread">
+                                <p>
+                                    <input class="update-badge" name="packs" type="radio" id="1" value="1" />
+                                    <label for="1">1</label>
+
+                                    <input class="update-badge" name="packs" type="radio" id="2" value="2" />
+                                    <label for="2">2</label>
+                                </p>
+                                <p>
+                                    <input class="update-badge" name="packs" type="radio" id="3" value="3" />
+                                    <label for="3">3</label>
+
+                                    <input class="update-badge" name="packs" type="radio" id="4" value="4" />
+                                    <label for="4">4</label>
+                                </p>
+                                <p>
+                                    <input class="update-badge" name="packs" type="radio" id="5" value="5" />
+                                    <label for="5">5</label>
+
+                                    <input class="update-badge" name="packs" type="radio" id="6" value="6" />
+                                    <label for="6">6</label>
+                                </p>
+                            </form>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div name="butter" class="btn lists collapsible-header waves-effect waves-light">
+                            Butter
+                            <span id="butter" class="badge"></span>
+                        </div>
+                        <div class="collapsible-body">
+                            <form class="butter">
+                                <p>
+                                    <input class="update-badge" name="packs" type="radio" id="7" value="1" />
+                                    <label for="7">1</label>
+
+                                    <input class="update-badge" name="packs" type="radio" id="8" value="2" />
+                                    <label for="8">2</label>
+                                </p>
+                            </form>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div name="jam" class="btn lists collapsible-header waves-effect waves-light">
+                            Jam
+                            <span id="jam" class="badge"></span>
+                        </div>
+                        <div class="collapsible-body">
+                            <form class="jam">
+                                <p>
+                                    <input class="update-badge" name="packs" type="radio" id="9" value="1" />
+                                    <label for="9">1</label>
+
+                                    <input class="update-badge" name="packs" type="radio" id="10" value="2" />
+                                    <label for="10">2</label>
+                                </p>
+                            </form>
+                        </div>
+                    </li>
+
+                </ul>
+                <!-- <a class="btn-floating btn-large waves-effect waves-light red"><i class="material-icons">keyboard_arrow_left</i></a> -->
+            </div>
+
+            <!-- <button class="create waves-effect waves-light btn">Create !</button> -->
+        </div>
+    </section>
+
+    <!--<section id="openList">
+
+        </section>-->
+
+    </div>
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="js/jquery.localScroll.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>

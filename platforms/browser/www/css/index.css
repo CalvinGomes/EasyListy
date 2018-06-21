@@ -1,0 +1,77 @@
+@media screen and (max-width: 767px) {
+    body{
+        background-color: #E3F2FD;
+        height: 100vh;
+        width: 100%;
+        overflow-y: hidden;
+    }
+
+    #front-page{
+        margin-top: 50%;
+        margin-bottom: 50%;
+        text-align: center;
+    }
+
+    .btn{
+        background-color: #2196F3;
+        font-size: 19px;
+        text-transform: none;
+        min-height: 70px;
+        width: 60%;
+        margin: 10px;
+    }
+
+    .btn-floating{
+        padding-left: 0%;
+        position: relative;
+    }
+
+    .lists{
+        text-align: center!important;
+        background-color: #2196F3;
+        font-size: 20px;
+        text-transform: none;
+        min-height: 70px;
+        width: 100%;
+        margin-left: 0px;
+        border-bottom: 0px;
+    }
+
+    label{
+        margin-right: 50px;
+    }
+
+    .collapsible-body{
+        padding-left: 28%;
+    }
+
+    .badge{
+        margin-top: auto!important;
+        margin-bottom: auto!important;
+        color: black!important;
+        background-color: transparent;
+    }
+
+    .names{
+        margin-top: auto!important;
+        margin-bottom: auto!important;
+    }
+
+    .change{
+        background-color: tomato!important;
+        box-shadow: black;
+        border-radius: 4px;
+    }
+
+    #select-category{
+        text-align: center;
+    }
+
+    #item-list{
+        text-align: center;
+    }
+
+    h2{
+        font-size: 40px!important;
+    }
+}

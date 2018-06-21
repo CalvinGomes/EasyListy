@@ -1,0 +1,225 @@
+/*Common to all*/
+
+.section-vertical{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content : center;
+    text-align : center;
+}
+.vertical-align{
+    display: flex;
+    align-items: center;
+}
+.row{
+    width: 100%;
+}
+h1,
+h1,
+h3,
+h4,
+p,
+li{
+    font-family: 'Raleway', sans-serif;
+}
+
+/*navigation styles*/
+
+/*Navigation styles End Here*/
+
+/*Header styles*/
+header{
+    height: 100vh;
+    width : 100%;
+    top : 0px;
+}
+header h2{
+    color : white !important;
+    font-size: 300%;
+    margin-bottom: 10px;
+}
+header h3{
+    color: white!important;
+    /*margin: 20px;*/
+}
+header h1{
+    color : white !important;
+    font-size: 450%;
+    margin-bottom: 10px;
+}
+header p{
+    color: white !important;
+    font-size : 120%;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+header a{
+    text-decoration : none;
+    font-size: 100%;
+}
+.btn {
+    font-size : 120%;
+    color : white;
+    padding : 10px 20px 10px 20px;
+    border:solid white;
+    text-transform: uppercase;
+    transition : 1s;
+}
+.btn:hover {
+    color : #c4ceab;
+    border: solid #627a91;
+}
+
+/*Header styles end*/
+
+/*about*/
+#about{
+    /*background: #c4ceab;*/
+    background: url(../img/blue.jpg);
+    background-repeat: repeat!important;
+    background-attachment: fixed;
+    color: black;
+}
+/*about ends*/
+
+/*projects*/
+#projects{
+    
+    /*background: #627a91;*/
+    background: url(../img/green.jpg);
+    background-repeat: repeat!important;
+    background-attachment: fixed;
+    color: black;
+}
+
+.images{
+    padding-bottom: 25px;
+}
+/*projects ends*/
+
+/*Contact-me*/
+#contact-me{
+
+    /*background: #c2c7e5;*/
+    color: black;
+    background: url(../img/lavender.jpg);
+    background-repeat: repeat!important;
+    background-attachment: fixed;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 50%;
+    align-items: center;
+}
+
+#contact-me.btn{
+    background-color: green;
+}
+
+.forms{
+    padding: 10px;
+    box-shadow: 0px 0px 10px 1px;
+    border-radius: 5px;
+    width: 50%;
+}
+/*Contact-me ends*/
+
+/*footer*/
+#footer{
+
+    height: 40px;
+    background:#211e27;
+    color: white;
+}
+/*footer ends*/
+
+/*Media Queries begins*/
+@media screen and (max-width : 767px){
+    .section-background{
+        background: url(../img/codesm.jpg);
+        background-repeat : no-repeat!important;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        font-family: 'Raleway', sans-serif;      
+    }
+ 
+    .navbar{
+        margin: 5px;
+        text-align: center;
+        background: transparent;
+    }
+
+    .list-set-2{
+        margin-bottom: 50px;
+    }
+    header h1{
+        color : white !important;
+        font-size: 325%;
+        margin-bottom: 5px;
+        /*margin-left: 15px;*/
+    }
+
+    header h2{
+        color : white !important;
+        font-size: 225%;
+        margin-bottom: 15px;
+        /*margin-left: 0px;*/
+    }
+
+    header h3{
+        color : white !important;
+        font-size: 150%;
+        margin-bottom: 15px;
+        /*margin-left: 0px;*/
+    }
+    .btn{
+        font-size: 75%;
+    }
+    .img-responsive.lap{
+        display: none;
+    }
+    .img-responsive.tab{
+        display: block;
+    }
+    
+}
+
+@media screen and (min-width : 768px){
+
+    .section-background{
+        background: url(../img/codebg1.jpg);
+        background-attachment: fixed;
+        background-repeat : no-repeat!important;
+        background-position: center;
+        background-size: cover;
+        font-family: 'Raleway', sans-serif;
+    }
+    .navbar {
+        padding: 10px;
+        margin-left: 75%;
+        background: transparent;
+        border: none!important;
+    }
+     .text-left{
+        text-align: left!important;
+    }
+    .text-right{
+        text-align: right!important;
+    }
+    .service {
+        margin-bottom : 50px;
+    }
+    .btn{
+        margin-top: 30px;
+    }
+    .img-responsive.tab{
+        display: none;
+    }
+    .img-responsive.lap{
+        display: block;
+    }
+    #about,
+    #general-rules{
+        padding: 80px;
+    }
+}
